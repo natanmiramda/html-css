@@ -1,0 +1,7 @@
+estudos de html
+
+hr = linha na parte debaixo do texto
+h1 = Cria paragrafos
+br = Quebra a linha
+
+Para criar emojis usar &#x e o codigo do emoji que pode ser encontrado no emoji pidia

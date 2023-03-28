@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1{
+            
+            background-color: lightgray ;
+            height: 300px;
+            width: 300px;
+
+             /* Shot hand da Borda 
+            border:10px solid darkslatergray
+            */
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+            
+            /*
+            Short hand padding
+            padding 10px (se tiver apenas esse valor ele sera aplicado em todos os lados) se não pode ser aplicado em sentido horario os valores em px
+            */
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+           
+            margin: 20px auto 40px auto;
+
+            outline: 5px dashed salmon;
+        }
+        a{
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            outline: 3px dashed salmon;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">Links são exemplos de caixas inline-level</a>. vamos ver como tudo isso funciona</p>
+</body>
+</html>

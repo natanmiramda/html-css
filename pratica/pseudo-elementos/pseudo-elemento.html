@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elemento Na pratica</title>
+    <style>
+        body{
+            background-color: black;
+           color: rgb(255, 255, 255);
+           padding: 5px;
+        }
+        h1{
+            color: rgb(118, 197, 207);
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 40px;
+        }
+        h2{
+            text-align: center;
+            font-weight: bold;
+            font-size: 30px;
+            color: rgb(118, 197, 207);
+        }
+            
+
+        .firstline::first-line{
+            font-weight: bold;
+            font-size: 20px;
+            color: rgb(255, 127, 127);
+        }
+
+        .firstletter::first-letter{
+            font-weight: bold;
+            font-size: 20px;
+            color: rgb(255, 127, 127);
+            font-size: 50px;
+        }
+        .selection::selection{
+            background-color: rgb(173, 97, 97);
+            color: black;
+        }
+        ul > li::marker{
+            color: rgb(255, 88, 88);
+            content: '> ';
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .placeholder::placeholder{
+            font-weight: bolder;
+            color: rgb(153, 20, 20);
+        }
+        .before::before{
+            content: '{X} ';
+            font-weight: bold;
+            color: rgb(255, 47, 47);
+        }
+        .after::after{
+            content: ' {X} ';
+            font-weight: bold;
+            color: rgb(255, 47, 47);
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Pseudo Elementos</h1>
+    <hr>
+    <h2>1 - Primeira linha</h2>
+    <p class="firstline"> Este é um texto de exemplo para testes de pseudo-elemtos do CSS Lorem ipsum dolor, sit amet consectetur adipisicing elit. A ut laboriosam autem, voluptas sapiente soluta incidunt earum exercitationem officia nisi! Officia, incidunt numquam! Doloremque officia aliquid, cum eaque illo non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum cum culpa quidem eius deleniti nostrum alias explicabo? Consequatur id aliquam numquam ex similique nam asperiores eligendi, totam dicta recusandae nemo?</p>
+
+    <hr>
+
+    <h2>2 - Primeira letra</h2>
+    <p class="firstletter"> Este é um texto de exemplo para testes de pseudo-elemtos do CSS Lorem ipsum dolor, sit amet consectetur adipisicing elit. A ut laboriosam autem, voluptas sapiente soluta incidunt earum exercitationem officia nisi! Officia, incidunt numquam! Doloremque officia aliquid, cum eaque illo non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum cum culpa quidem eius deleniti nostrum alias explicabo? Consequatur id aliquam numquam ex similique nam asperiores eligendi, totam dicta recusandae nemo?</p>
+
+    <hr>
+
+    <h2>3 - Seleção</h2>
+    <p class="selection"> Este é um texto de exemplo para testes de pseudo-elemtos do CSS Lorem ipsum dolor, sit amet consectetur adipisicing elit. A ut laboriosam autem, voluptas sapiente soluta incidunt earum exercitationem officia nisi! Officia, incidunt numquam! Doloremque officia aliquid, cum eaque illo non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum cum culpa quidem eius deleniti nostrum alias explicabo? Consequatur id aliquam numquam ex similique nam asperiores eligendi, totam dicta recusandae nemo?</p>
+
+    <hr>
+
+    <h2>4 - Marcador</h2>
+    <p class="marker"> 
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </p>
+    <hr>
+
+    <h2>5 - Placeholder</h2>
+    <input type="text" placeholder="Digite seu email" class="placeholder">
+    
+    <hr>
+    <h2>6 - Antes</h2>
+
+    <div class="before">Exemplo de Texto</div>  
+    <div class="before">Exemplo de Texto</div>
+    <div class="before">Exemplo de Texto</div>
+    <hr>
+    <h2>7 - Depois</h2>
+
+    <div class="after">Exemplo de Texto</div>  
+    <div class="after">Exemplo de Texto</div>
+    <div class="after">Exemplo de Texto</div>
+
+
+
+</body>
+</html>
